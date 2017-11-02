@@ -1,5 +1,7 @@
-$( document ).ready(function() {
+$(document).ready(function() {
   $('#puffly').addClass('willAppear')
-  $('#puffly').delay(3000).removeClass('willAppear')
-  return
+  
+  setTimeout(function(){
+    $('#puffly').removeClass('willAppear')
+  }, 3000)
 });
